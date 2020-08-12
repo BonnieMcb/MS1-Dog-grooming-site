@@ -1,0 +1,18 @@
+
+
+/* ----------- Colours ----------- */
+
+.nav-links {
+    background-color: #f0f8ff
+}
+
+.logo {
+    background-color: #ff0000;
+    font-size: 30px;
+}
+
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url("/assets/images/dummyhero.jpg") center;
+}
