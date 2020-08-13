@@ -6,6 +6,10 @@
     background-color: #f0f8ff
 }
 
+.list-inline  {
+    align-content: right;
+}
+
 .logo {
     background-color: #ff0000;
     font-size: 30px;
@@ -15,4 +19,25 @@
     height: 600px;
     width: 100%;
     background: url("/assets/images/dummyhero.jpg") center;
+}
+
+.home-blurb {
+    background-color: yellow;
+    min-height: 180px;
+}
+
+.booking-form {
+    max-width: 350px;
+    align-self: center;
+}
+
+
+/* ----------- Footer ----------- */
+
+footer {
+    background-color: #00e1ff;
+    min-height: 100px;
+    padding: 3px;
+    margin: 3px 0;
+
 }
