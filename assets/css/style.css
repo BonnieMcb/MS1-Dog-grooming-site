@@ -31,6 +31,33 @@
     align-self: center;
 }
 
+.location-left {
+    background-color: yellow;
+}
+
+.location-right {
+    background-color: grey;
+}
+
+.location {
+    min-height: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------- Gallery ----------- */
+
+#photos {
+    clear: both;
+    line-height: 0;
+    column-count: 4;
+    column-gap: 0px;
+}
+
+#photos img {
+    width: 100%;
+}
+/* add mediaqueries */
 
 /* ----------- Footer ----------- */
 
