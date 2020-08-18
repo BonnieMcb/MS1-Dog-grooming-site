@@ -29,7 +29,7 @@
 
 .home-container {
     background-color: yellow;
-    min-height: 180px;
+    /*min-height: 180px;*/
 }
 
 .home-blurb {
@@ -45,19 +45,19 @@
     max-width: 80%;
     }
 
-.about-blurb {
-    padding: 4px;
-}
-
-.paw-list li {
-    list-style-image: url("/assets/images/paw.png");
+.paw-list {
+    margin-top: 8px;
 }
 
 
-.booking-form {
-    max-width: 350px;
-    align-self: center;
+
+/* ----------- Bookings ----------- */
+
+.booking-section {
+    margin-top: 16px;
 }
+
+
 
 .location-left {
     background-color: yellow;
