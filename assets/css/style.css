@@ -36,6 +36,10 @@
     padding: 2em;
 }
 
+section {
+    margin-top: 60px;
+}
+
 /* ----------- Home ----------- */
 
 #hero-image {
@@ -68,9 +72,6 @@
 
 /* ----------- Services ----------- */
 
-.container-wrap {
-    padding: 1em 5em;
-}
 .services-row {
     display: inline;
 }
