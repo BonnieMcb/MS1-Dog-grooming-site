@@ -6,11 +6,6 @@
     background-color: #f0f8ff
 }
 
-.testbox {
-    background-color: yellow;
-    width: 70%;
-    margin: 0 auto;
-}
 
 
 /* ----------- Header ----------- */
@@ -72,6 +67,20 @@ section {
 
 /* ----------- Services ----------- */
 
+/*.testbox {
+    background-color: yellow;
+    width: 70%;
+    margin: 0 auto;
+}*/
+
+.service-box {
+    padding: 2em;
+}
+
+.service-description {
+    padding: 1em 0;
+}
+
 .services-row {
     display: inline;
 }
@@ -80,8 +89,16 @@ h5 {
     text-align: left;
 }
 
-.icon-col {
+.services-right {
     text-align: right;
+}
+
+.service-icons {
+    margin: 0;
+}
+
+.nopad-col {
+    padding: 0;
 }
 
 .service-icons li i {
