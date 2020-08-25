@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -14,29 +15,26 @@
 <body>
 
 <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark ">
+    <nav id="navbarstyle" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark ">
         <a class="navbar-brand" href="/index.html">Happy Dogs</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/bookings.html">Bookings</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/location.html">Find Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/test.html">Test</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/bookings.html">Bookings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/location.html">Find Us</a>
+                </li>
+            </ul>
           </div>
       </nav>
 
@@ -45,23 +43,27 @@
  <section>
     <div id="hero-image">
         <img src="/assets/images/herodog.jpg">
+        <div id="home-blurb" class="container">
+            <div class="row">Superior grooming for South London’s dogs</div>
+        </div>
     </div>
 
-    <div class="container home-blurb">
-        <div class="row">Happy Dogs</div>
-        <div class="row">Providing superior grooming treatments for South-London’s dogs</div>
-    </div>
+   
 
     <div class="container about-container">
         <div class="row">
             <div>
                 <ul class="fa-ul">
-                    <li class="paw-list"><span class="fa-li"><i class="fa fa-paw"></i></span>Happy offers a professional dog grooming service in the South-London area. We offer a range of services provided by fully qualified staff.</li>
+                    <li class="paw-list"><span class="fa-li"><i class="fa fa-paw"></i></span>Happy Dogs offers a professional dog grooming service in the South-London area. We offer a range of services provided by fully qualified staff.</li>
                     <li class="paw-list"><span class="fa-li"><i class="fa fa-paw"></i></span>From nail trimming to a full groom, from a Dachshund to a Great Dane... no job, or dog, is to big or too small for us!</li>
                     <li class="paw-list"><span class="fa-li"><i class="fa fa-paw"></i></span>We are cage free and drying cabinet free, and we take great pride on giving your dog a great experience by putting their welfare first. Your dog will leave our salon looking and feeling great!</li>
                 </ul>
             </div>
         </div>
+    </div>
+
+    <div class="container">
+    
     </div>
 
      

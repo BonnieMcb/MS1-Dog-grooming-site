@@ -6,24 +6,50 @@
     background-color: #f0f8ff
 }
 
-
-
 /* ----------- Header ----------- */
+
+#navbarstyle {
+    height: 80px;
+    background-color: #1A535C !important;
+    color: #F7FFF7;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#navbarstyle .navbar-brand{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#navbarstyle .nav-item a {
+    color: #fff; 
+}
+
+#navbarstyle .nav-item.active a {
+    text-decoration: underline;
+    font-weight: 600;
+}
 
 .list-inline  {
     align-content: right;
 }
 
-.logo {
-    background-color: #ff0000;
-    font-size: 30px;
-}
 
 /* ----------- General ----------- */
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 100px;
+    font-family: 'Montserrat', sans-serif; 
+}
+
 .page-heading{
     margin-top: 8px;
-    padding-left: 2em
+    
+    padding-left: 46px;
 }
 
 .page-text {
@@ -31,51 +57,64 @@
     padding: 2em;
 }
 
+section {
+    margin-top: 80px;
+}
 
+.heading-container {
+    padding-top: 1em;
+    margin: 0;
+}
 
 /* ----------- Home ----------- */
+
+#hero-image {
+    position: relative;
+}
 
 #hero-image img {
     width: 100%;
 }
 
-.home-container {
-    background-color: yellow;
-    /*min-height: 180px;*/
+#home-blurb {
+    position: absolute;
+    top: 0;
+    max-width: 100%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 2em;
+    background: rgba(0, 0, 0, 0.25);
+    color: #F7FFF7;
 }
 
-.home-blurb {
-   /* margin: auto;
-    padding: 60px 0;
-    text-align: center;
-    max-width: 80%;*/
-    position: absolute;
-    /* background: rgba(255,255,255,0.5); */
-    font-size: 20px;
-    font-weight: bold;
-    color: #F7FFF7;
-    left: 22px;
-    top: 314px;
-}
+#home-blurb .row {
+    margin-left: 2em;
 }
 
 .about-container {
     margin: auto;
     padding: 60px 0;
-    max-width: 80%;
+    max-width: 75%;
     }
 
 .paw-list {
-    margin-top: 8px;
+    margin-top: 20px;
+}
+
+.paw-list span {
+    color: #1A535C;
+}
+
+
+.card-style {
+    width: 18rem;
+    margin: auto;
 }
 
 /* ----------- Services ----------- */
-
-/*.testbox {
-    background-color: yellow;
-    width: 70%;
-    margin: 0 auto;
-}*/
 
 .service-box {
     padding: 2em;
@@ -122,11 +161,6 @@ h5 {
 
 /* ----------- Bookings ----------- */
 
-.booking-form {
-    margin-top: 5em;
-    margin-bottom: 5em;
-}
-
 #booking-container{
     margin-left: 0;
 }
@@ -136,7 +170,23 @@ h5 {
     padding: 2em;
 }
 
+#booking-form {
+    margin-top: 2em;
+}
 
+#booking-form .form-group {
+    justify-content: flex-end;
+    margin: 0 0 1em 0;
+}
+
+#booking-form .form-group:last-child {
+    text-align: right;
+}
+
+#inputExtra {
+    height: 150px;
+    resize: none;
+}
 
 .location-left {
     background-color: yellow;
@@ -169,8 +219,12 @@ h5 {
 /* ----------- Footer ----------- */
 
 footer {
-    background-color: #00e1ff;
-    min-height: 100px;
+    background-color: #1A535C;
+    color: #F7FFF7;
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
     padding: 3px;
     margin: 3px 0;
     text-align: center;
@@ -179,6 +233,7 @@ footer {
 
 .footer-icon {
     font-size: 20px;
+    color: #F7FFF7;
 }
 
 .footer-line {
