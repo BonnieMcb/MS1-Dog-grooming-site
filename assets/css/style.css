@@ -66,6 +66,16 @@ section {
     margin: 0;
 }
 
+button.btn {
+    background: #FF6B6B !important;
+    border-radius: 0 !important;
+    border: none;
+}
+
+button.btn:hover {
+    color: black;
+}
+
 /* ----------- Home ----------- */
 
 #hero-image {
@@ -155,19 +165,13 @@ h5 {
     padding: 0;
 }
 
-.service-icons li i {
-    width: 32px;
-    height: 32px;
-    padding: 12px 0;
-    border-radius: 50%;
-    font-size: 18px;
-    line-height: 7px;
+.services-right .list-inline-item {
     text-align: center;
-    color: #fafafa;
-    background: #8f8f8f;
-    transition: all 0.35s ease-in-out;
 }
 
+.services-right .list-inline-item div:first-child {
+    color: #1A535C;
+}
 
 /* ----------- Bookings ----------- */
 
@@ -185,7 +189,7 @@ h5 {
 }
 
 #booking-form .form-group {
-    justify-content: flex-end;
+    justify-content: center;
     margin: 0 0 1em 0;
 }
 
