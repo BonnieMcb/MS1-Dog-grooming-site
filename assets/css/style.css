@@ -9,15 +9,15 @@
 /* ----------- Header ----------- */
 
 #navbarstyle {
-    height: 80px;
     background-color: #1A535C !important;
     color: #F7FFF7;
     font-family: 'Montserrat', sans-serif;
 }
 
-#navbarstyle .navbar-brand{
+#navbarstyle .navbar-brand {
     font-size: 1.5rem;
     font-weight: 600;
+    padding: 0.5em 0;
 }
 
 #navbarstyle .nav-item a {
@@ -46,10 +46,10 @@ body {
     font-family: 'Montserrat', sans-serif; 
 }
 
-.page-heading{
-    margin-top: 8px;
+.page-heading {
+    margin-top: 16px;
     
-    padding-left: 46px;
+    padding-left: 32px;
 }
 
 .page-text {
@@ -58,7 +58,7 @@ body {
 }
 
 section {
-    margin-top: 80px;
+    margin-top: 4.75em;
 }
 
 .heading-container {
@@ -66,7 +66,10 @@ section {
     margin: 0;
 }
 
-button.btn {
+.spacer-row {
+    height: 50px;
+}
+.btn {
     background: #FF6B6B !important;
     border-radius: 0 !important;
     border: none;
@@ -74,6 +77,43 @@ button.btn {
 
 button.btn:hover {
     color: black;
+}
+
+/* ------- Back to Top -------- */
+
+#back-to-top {
+    width: 4em;
+    height: 4em;
+
+    background: #000;
+    opacity: 0.5;
+    position: fixed;
+
+    bottom: 3em;
+    right: 3em;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 1em;
+
+    z-index: 1337;
+}
+
+#back-to-top span {
+    color: white;
+    font-size: 2.5em;
+}
+
+#back-to-top:hover {
+    background: #FF6B6B;
+    opacity: 1;
+    text-decoration: none;
+}
+
+#back-to-top.show {
+    display: flex;
 }
 
 /* ----------- Home ----------- */
@@ -94,28 +134,36 @@ button.btn:hover {
     padding: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
     font-weight: bold;
     font-size: 2em;
-    background: rgba(0, 0, 0, 0.25);
-    color: #F7FFF7;
+    background: rgba(0, 0, 0, 0.35);
+    color: white;
 }
 
 #home-blurb .row {
-    margin-left: 2em;
+    margin: 0;
+    text-align: center;
 }
 
-.about-container {
-    margin: auto;
-    padding: 60px 0;
-    max-width: 75%;
-    }
+@media (max-width: 768px) {  
+
+#home-blurb {
+    font-size: 1.5em;
+}
+
+}
+
+.about-container .row {
+    padding: 2em;
+}
 
 .paw-list {
     margin-top: 20px;
 }
 
-.paw-list span {
-    color: #1A535C;
+.paw-list span:first-child {
+    color: #FF6B6B;
 }
 
 .carousel-properties {
@@ -131,13 +179,18 @@ button.btn:hover {
 #map {
     text-align: center;
 }
-    
+
+/*    For removing image on non-home pages on mobile */
+
+@media (max-width: 576px) {  
+
+.booking-left div img {
+    display: none;
+}
+
+}
 
 /* ----------- Services ----------- */
-
-.service-box {
-    padding: 2em;
-}
 
 .service-description {
     padding: 1em 0;
@@ -153,7 +206,7 @@ h5 {
 }
 
 .services-right {
-    text-align: right;
+    text-align: left;
 }
 
 .service-icons {
@@ -173,19 +226,24 @@ h5 {
     color: #1A535C;
 }
 
-/* ----------- Bookings ----------- */
+@media (min-width: 576px) {  
 
-#booking-container{
-    margin-left: 0;
+.services-right {
+    text-align: right;
 }
 
-#booking-left div img {
+}
+
+/* ----------- Bookings ----------- */
+
+.booking-left div img {
     width: 100%;
     padding: 2em;
 }
 
 #booking-form {
     margin-top: 2em;
+    padding: 0 2em;
 }
 
 #booking-form .form-group {
@@ -197,6 +255,10 @@ h5 {
     text-align: right;
 }
 
+.hard-corners {
+    border-radius: 0;
+}
+
 #inputExtra {
     height: 150px;
     resize: none;
@@ -204,20 +266,17 @@ h5 {
 
 /* ----------- Location ----------- */
 
-.location-left {
-    background-color: yellow;
-    justify-content: center;
-}
-
-.location-right {
-    background-color: grey;
-    text-align: center;
-}
-
 .location {
     min-height: 200px;
     margin: 0;
     padding: 0;
+}
+
+#map iframe {
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    border: none;
 }
 
 /* ----------- Gallery ----------- */
