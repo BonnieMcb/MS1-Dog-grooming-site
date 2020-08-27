@@ -146,14 +146,6 @@ button.btn:hover {
     text-align: center;
 }
 
-@media (max-width: 768px) {  
-
-#home-blurb {
-    font-size: 1.5em;
-}
-
-}
-
 .about-container .row {
     padding: 2em;
 }
@@ -163,21 +155,65 @@ button.btn:hover {
 }
 
 .paw-list span:first-child {
-    color: #FF6B6B;
+    color: #1A535C;
 }
 
-.carousel-properties {
-    background-color: #1A535C;
+#carousel-row {
+    background: #333;
 }
 
+#carousel-row .row {
+    padding: 1em;
+}
+
+#carousel-row .row:first-child {
+    justify-content: center;
+}
+
+#carousel-controls {
+    width: 100%;
+}
+
+.card {
+    border: none;
+}
 
 .card-style {
-    width: 18rem;
+    width: 60%;
     margin: auto;
+    background: #FFE66D;
+    border-radius: 0;
 }
 
-#map {
-    text-align: center;
+.card-image {
+    width: 150px;
+    height: 150px;
+
+    background-position: 50% 50%;
+    background-size: cover;
+
+    border-radius: 100px;
+}
+
+.card-text {
+    font-style: italic;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.team-name {
+    color: #1A535C;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {  
+
+#home-blurb {
+    font-size: 1.5em;
+}
+
 }
 
 /*    For removing image on non-home pages on mobile */
@@ -270,6 +306,10 @@ h5 {
     min-height: 200px;
     margin: 0;
     padding: 0;
+}
+
+#map {
+    text-align: center;
 }
 
 #map iframe {
