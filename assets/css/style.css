@@ -92,7 +92,6 @@ button.btn:hover {
     border-radius: 1em;
 
     z-index: 1337;
-    color: black;
 }
 
 #back-to-top .fas {
@@ -113,6 +112,13 @@ button.btn:hover {
     background: #FF6B6B;
     opacity: 1;
     text-decoration: none;
+}
+
+#back-to-top div {
+    color: #000;
+}
+
+#back-to-top:hover div {
     color: #FF6B6B;
 }
 
