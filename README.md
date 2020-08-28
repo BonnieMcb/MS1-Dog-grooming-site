@@ -9,7 +9,9 @@ This website for a fictional company is created for educational purposes only.
 Happy Dogs is a website for a fictional dog grooming business that offers various salon services for dogs. Inspiration for the idea came from a family member who is working on creating such a business for themselves. 
 The brief for this first Milestone project was to make a responsive and static website with a minimum of three pages using HTML5 and CSS3. It is the first of four projects as part of the Full Stack Web Development Program at The Code Institute. 
 
-#UX (User Experience)
+[click here to view the project as a live website](https://bonniemcb.github.io/MS1-Dog-grooming-site/index.html)
+
+## UX (User Experience)
 
 ### Goals
 
@@ -35,6 +37,8 @@ In terms of my fictional business, the goal was to.
 
 I wanted the style of the website to feel professional without being too fancy... approachable without being too cutesey. I believe 'modern' would describe the style. I used this to inform my choices on colours, images and fonts. 
 
+For the sub-pages I used the rule of thirds, by giving the main content 2/3 of the page, on the right hand side. The left 1/3 is used for a page heading, brief description and an image. 
+
 Colour Pallete
 
 I used the coolers.co site to choose a complementary colour mix for my website. Innitially I had imagined a light turquiose in my mock ups but this looked too medical and I did not want the site to be mistaken for a vet instead of a grooming salon. 
@@ -52,7 +56,7 @@ I did not want to make any bold statements with the typography. The main aim was
 
 Imagery
 
-?????????????????????????????
+I tried to choose images from free libraries that matched the website's colours.
 
 Wireframes
 
@@ -62,9 +66,36 @@ figma link https://www.figma.com/file/hvVtprtZ2O76Y6mLTYofpp/MS1-Dog-Grooming-We
 
 ### Features
 
-
-
 #### Existing Features
+
+##### Consistent features across all pages
+
+- An always visible navigation bar with the *Happy Dogs* logo on the left (which leads a user back to 'Home' when clicked) and links to the sub-pages on the right. 
+- The navigation menu flips to a hamburger button on small screens
+- The footer is also consistent across all pages with links to social media profiles there.
+- A 'Back to Top' button pops up on all pages once the user has scrolled more than 100px.
+
+##### Home
+
+- An aesthetically pleasing hero image draws the user's attention.
+- Below this, there are 3 sections with the aim of giving the user confidence that this is a reliable and good quality company.
+- The testimonials are displayed in a carousel format with a bright contrasting colour to maintain the user's attention towards the bottom of the page.
+
+##### Services
+
+- The various services that are available are listed on the right two-thirds of the page. 
+- Pictograms as well as text are used to inform the user of what each different service entails.
+- There is a 'Book Now' call to action button that links to the Bookings page.
+
+##### Bookings 
+
+- A short booking form takes up the right two-thirds of the page. Some fields are required in order to submit the form.
+- The phone number is also listed on this page (as well as the footer) for those who prefer to call.
+
+##### Find Us
+
+- The left third of the page has a short description to give confidence to the user about getting to the location.
+- The right side of the page contains an embedded Google map that will take the user to the google maps website in a different window when clicked.
 
 #### Features To Be Implemented
 
@@ -81,57 +112,25 @@ figma link https://www.figma.com/file/hvVtprtZ2O76Y6mLTYofpp/MS1-Dog-Grooming-We
 
 #### Frameworks, Libraries & Programs Used
 
-
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <title>Happy Dogs</title>
-
-
-1. [Bootstrap 4.4.1:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
-    - Bootstrap was used to assist with the responsiveness and styling of the website.
-1. [Hover.css:](https://ianlunn.github.io/Hover/)
-    - Hover.css was used on the Social Media icons in the footer to add the float transition while being hovered over.
-1. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
-1. [Font Awesome:](https://fontawesome.com/)
+1. [Bootstrap 4.5.2 :](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
+    - Bootstrap was used in order to ensure easy responsiveness of the site.
+2. [Google Fonts:](https://fonts.google.com/)
+    - Google fonts were used to import the 'Montserrat' font into the style.css file which is used on all pages throughout the project.
+3. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
-1. [jQuery:](https://jquery.com/)
-    - jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
-1. [Git](https://git-scm.com/)
-    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-1. [GitHub:](https://github.com/)
-    - GitHub is used to store the projects code after being pushed from Git.
+4. [jQuery:](https://jquery.com/)
+    - jQuery is needed by Bootstrap for the navbar, carousel, and the Back to Top button.
+5. [Gitpod](https://www.gitpod.io/)
+    - Gitpod was the environment in which the site was created, using the terminal to commit to Git and Push to GitHub.
+6. [Figma](https://www.figma.com/) 
+    - Figma was used to create wireframes and aid design and layout decisions.
 
-- [Bootstrap framework](https://getbootstrap.com/) 
-    * I decided to use Bootstrap's grid container system as I wanted to design my project with a 'mobile first' approach.
-- [Figma](https://www.figma.com/) 
-    * Figma helped me crystalise my design ideas, including colour scheme, font style, image placement and overall page layout.
-- [FontAwesome](https://fontawesome.com/) 
-    * I relied on five free FontAwesome icons for my design project.
-- [Pexels](https://www.pexels.com/) 
-    * This was the source of all of the images in my project.
-- [TinyPNG](https://tinypng.com/) 
-    * I used TinyPNG to compress my image files to try to reduce the loading time for each page. 
-- [Google Fonts](https://fonts.google.com/)
-    * I used one Google Font to create my logo and two more to style the content of the website.
-- [Gauger Fonticon Generator](https://gauger.io/fonticon/) 
-    * This free interactive Fonticon Generator allowed me to create a fonticon with a Font Awesome icon and style it with the colours from my colour scheme.
-- [W3C Markup Validation Service](https://validator.w3.org/) 
-    * This was a great tool throughout the project to test my HTML and CSS code.
-- [W3C Schools](https://www.w3schools.com/)
-    * I've refered to WSC Schools several times whilst building my project, especially when designing the modal for my contact form, as described [here.](https://www.w3schools.com/bootstrap/bootstrap_modal.asp)
-- [Stack Overflow](https://stackoverflow.com/)
-    * Although it isn't a technology, I found a lot of guidance on Stack Overflow and used [this page](https://stackoverflow.com/questions/609273/convert-an-image-to-grayscale-in-html-css*/) to help me make images interactive on hover.
 
 ## Testing
     The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+-   [W3C Markup Validator](https://validator.w3.org/) My HTML had no issues
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) My CSS had no issues, though there were many CSS bootstrap errors.
 
 ### Testing User Stories
 
@@ -153,8 +152,6 @@ Testimonials are found on the home page, and the links to social media are visib
 - The Bookings page has a short form with required fields, as well as the phone number at the top of the page for those who prefer to call.
 - The contact information for phone and email are also provided in the footer on every page.
 
-
-copypasta CI
 
 ### Further Testing
 
@@ -187,13 +184,13 @@ The project was deployed to GitHub Pages using the following steps...
 
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/BonnieMcb/MS1-Dog-grooming-site)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. You should now have a copy of the original repository in your GitHub account.
 
 ### Making a Local Clone
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/BonnieMcb/MS1-Dog-grooming-site)
 2. Under the repository name, click "Clone or download".
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
 4. Open Git Bash or Terminal
@@ -241,7 +238,7 @@ Images were used from the following image sharing sites:
 
 -   My Mentor for continuous helpful feedback.
 
--   Tutor support at Code Institute for their support.
+-   My partner Ben for invaluable feedback and endless cups of tea.
 
 
 
