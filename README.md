@@ -4,7 +4,7 @@
 
 This website for a fictional company is created for educational purposes only.
 
-![Happy Dogs Responsive](/assets/image/responsivedog.png)    
+![Happy Dogs Responsive](/assets/images/responsivedog.png)    
     
 Happy Dogs is a website for a fictional dog grooming business that offers various salon services for dogs. Inspiration for the idea came from a family member who is working on creating such a business for themselves. 
 The brief for this first Milestone project was to make a responsive and static website with a minimum of three pages using HTML5 and CSS3. It is the first of four projects as part of the Full Stack Web Development Program at The Code Institute. 
