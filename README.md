@@ -162,7 +162,8 @@ Testimonials are found on the home page, and the links to social media are visib
 
 ### Known Bugs
 
--   
+-   Back to Top button can overlap important content on small screens, which can look confusing.
+-   Embedded Google Map can be very small on some mobile devices.
 
 ## Deployment
 
