@@ -4,10 +4,7 @@
 
 This website for a fictional company is created for educational purposes only.
 
-  link
-  
-    img
-    
+![Happy Dogs Responsive](/assets/image/responsivedog.png)    
     
 Happy Dogs is a website for a fictional dog grooming business that offers various salon services for dogs. Inspiration for the idea came from a family member who is working on creating such a business for themselves. 
 The brief for this first Milestone project was to make a responsive and static website with a minimum of three pages using HTML5 and CSS3. It is the first of four projects as part of the Full Stack Web Development Program at The Code Institute. 
@@ -29,11 +26,10 @@ In terms of my fictional business, the goal was to.
 1. I Googled dog grooming services in my area and
   As a potential customer, I want to see services on offer and get a feel for the company.
 2. As a potential customer who has had a bad experience at a competitor, I want to know who the groomers are and if they are reliable.
-3. As a potential user, I would like some visual information to determine the reliablity of this business.
-4. As a potential user, I browse websites on my mobile phone and want to have a good experience and be able to find and view the information I want.
-5. As a potential user I want to know if this place is easy to get to.
-6. As a potential customer I want to know what other people say about this business.
-7. As a returning customer I want to be reminded of the services available and be able to make a booking easily.
+3. As a potential user, I browse websites on my mobile phone and want to have a good experience and be able to find and view the information I want.
+4. As a potential user I want to know if this place is easy to get to.
+5. As a potential customer I want to know what other people say about this business.
+6. As a returning customer I want to be reminded of the services available and be able to make a booking easily.
 
 ### Design
 
@@ -65,6 +61,8 @@ I did not create the website fully in a design tool only to then create it again
 figma link https://www.figma.com/file/hvVtprtZ2O76Y6mLTYofpp/MS1-Dog-Grooming-Website?node-id=0%3A1
 
 ### Features
+
+
 
 #### Existing Features
 
@@ -137,6 +135,23 @@ figma link https://www.figma.com/file/hvVtprtZ2O76Y6mLTYofpp/MS1-Dog-Grooming-We
 
 ### Testing User Stories
 
+1. As a potential customer, I want to see services on offer and get a feel for the company.
+- The user is presented with a high-contrast, easily readable navigation bar with links to other pages on the site. 
+- The eye is also drawn down to the hero image, with contrasting text clarifying what the company provides in just a few words.
+- The user can then scroll down to read more about the company, with “What we do” visible in tablet and mobile to invite scrolling. 
+- A ‘Back to top’ button is provided on all pages once the user scrolls a certain amount, and the nav bar is stuck to the top of the screen as you scroll, so the user never gets stuck at the bottom of a page with nowhere to go.
+2. As a potential customer who has had a bad experience at a competitor, I want to know who the groomers are and if they are reliable.
+- A description of the team and their qualifications is provided on the home page, immediately followed by testimonials and links to social media for further investigation of the company’s reputation.
+3. As a potential user, I browse websites on my mobile phone and want to have a good experience and be able to find and view the information I want.
+- The website is responsive on smaller screens with the result being an aesthetically pleasing as well as functional site on all screens.
+4. As a potential customer I want to know if this place is easy to get to.
+- In addition to the address and contact information in the footer, there is also a page with an embedded google map, and parking/public transport information.
+5. As a potential customer I want to know what other people say about this business.
+Testimonials are found on the home page, and the links to social media are visible on the high-contrast footer on every page.
+6. As a returning or potential customer I want to be reminded of the services available and be able to make a booking easily.
+- The services are laid out in a clear and clean manner, with a text description, as well as pictograms to provide information at a glance. A ‘Book Now’ button under every different service links to the Bookings page.
+- The Bookings page has a short form with required fields, as well as the phone number at the top of the page for those who prefer to call.
+- The contact information for phone and email are also provided in the footer on every page.
 
 
 copypasta CI
@@ -181,24 +196,11 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
 2. Under the repository name, click "Clone or download".
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-4. Open Git Bash
+4. Open Git Bash or Terminal
 5. Change the current working directory to the location where you want the cloned directory to be made.
 6. Type `git clone`, and then paste the URL you copied in Step 3.
-
-```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-```
-
 7. Press Enter. Your local clone will be created.
 
-```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-> Cloning into `CI-Clone`...
-> remote: Counting objects: 10, done.
-> remote: Compressing objects: 100% (8/8), done.
-> remove: Total 10 (delta 1), reused 10 (delta 1)
-> Unpacking objects: 100% (10/10), done.
-```
 
 Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
@@ -206,21 +208,34 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Code
 
--   The full-screen hero image code came from this [StackOverflow post](https://stackoverflow.com)
+- The Bootstrap Library and documentation version 4.5.2 was used extensively throughout the project in order to ensure responsiveness across the site, and also to implement certain elements like the card and carousel features.
 
--   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
+- Stack Overflow was invaluable, in particular for fixing certain Bootstrap issues.
 
--   [MDN Web Docs](https://developer.mozilla.org/) : For Pattern Validation code. Code was modified to better fit my needs and to match an Irish phone number layout to ensure correct validation. Tutorial Found [Here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel#Pattern_validation)
+- Google Maps was used to choose a fictional location and their iframe code was copied to the website in order to embed the map.
+
+- The 'Back to Top' button was based on the code at [codepen.io](https://codepen.io/matthewcain/pen/ZepbeR)
+
 
 ### Content
 
 -   All content was written by the developer.
 
--   Psychological properties of colours text in the README.md was found [here](http://www.colour-affects.co.uk/psychological-properties-of-colours)
-
 ### Media
 
--   All Images were created by the developer.
+Images were used from the following image sharing sites: 
+
+- [Hero image](https://unsplash.com/photos/915UJQaxtrk)
+- [Sarah](https://pixabay.com/photos/pup-dog-pretty-girl-christmas-dog-1926897/)
+- [Danny](https://pixabay.com/photos/people-man-boy-animal-dog-puppy-2589544/)
+- [Testimonial 1](https://www.flickr.com/photos/thomashawk/49270387811/)
+- [Testimonial 2](http://www.flickr.com/photos/75885098@N05/49786041748) photo credit: Bennilover
+- [Testimonial 3](http://www.flickr.com/photos/14838182@N00/7446546618) photo credit: Мaistora
+- [Testimonial 4](https://pixabay.com/photos/adorable-animal-dog-cheerful-cute-3344414/)
+- [Services](https://pixabay.com/photos/dog-dalmatians-pet-dog-breed-1020790/)
+- [Bookings](http://www.flickr.com/photos/29454428@N08/3210838977) photo credit: State Library of New South Wales collection
+- [Find Us](https://pixabay.com/photos/nose-dog-black-pet-the-muzzle-697697/)
+
 
 ### Acknowledgements
 
