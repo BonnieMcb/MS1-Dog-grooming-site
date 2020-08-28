@@ -40,7 +40,7 @@ For the sub-pages I used the rule of thirds, by giving the main content two-thir
 
 #### Colour Palette
 
-I used [coolors.co](coolors.co) to choose a suite of complementary colours for my website. Initially I had imagined a light turquiose in my mock ups but this looked too medical and I did not want the site to be mistaken for a vet instead of a grooming salon. 
+I used [coolors.co](https://coolors.co) to choose a suite of complementary colours for my website. Initially I had imagined a light turquiose in my mock ups but this looked too medical and I did not want the site to be mistaken for a vet instead of a grooming salon. 
 
 https://coolors.co/1a535c-4ecdc4-f7fff7-ff6b6b-ffe66d
 
@@ -134,20 +134,20 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Testing User Stories
 
-1. As a potential customer, I want to see services on offer and get a feel for the company.
+#### 1. As a potential customer, I want to see services on offer and get a feel for the company.
 - The user is presented with a high-contrast, easily-readable navigation bar with links to other pages on the site. 
 - The eye is also drawn down to the hero image, with contrasting text clarifying what the company provides in just a few words.
 - The user can then scroll down to read more about the company, with “What we do” visible in tablet and mobile to invite scrolling. 
 - A ‘Back to top’ button is provided on all pages once the user scrolls a certain amount, and the nav bar is stuck to the top of the screen as you scroll, so the user never gets stuck at the bottom of a page with nowhere to go.
-2. As a potential customer who has had a bad experience at a competitor, I want to know who the groomers are and if they are reliable.
+#### 2. As a potential customer who has had a bad experience at a competitor, I want to know who the groomers are and if they are reliable.
 - A description of the team and their qualifications is provided on the home page, immediately followed by testimonials and links to social media for further investigation of the company’s reputation.
-3. As a potential user, I browse websites on my mobile phone and want to have a good experience and be able to find and view the information I want.
+#### 3. As a potential user, I browse websites on my mobile phone and want to have a good experience and be able to find and view the information I want.
 - The website is responsive on smaller screens with the result being an aesthetically-pleasing and functional site on all screen sizes.
-4. As a potential customer I want to know if this place is easy to get to.
+#### 4. As a potential customer I want to know if this place is easy to get to.
 - In addition to the address and contact information in the footer, there is also a page with an embedded google map, and parking/public transport information.
-5. As a potential customer I want to know what other people say about this business.
+#### 5. As a potential customer I want to know what other people say about this business.
 Testimonials are found on the home page, and the links to social media are visible on the high-contrast footer on every page.
-6. As a returning or potential customer I want to be reminded of the services available and be able to make a booking easily.
+#### 6. As a returning or potential customer I want to be reminded of the services available and be able to make a booking easily.
 - The services are laid out in a clear and clean manner, with a text description, as well as pictograms to provide information at a glance. A ‘Book Now’ button under every different service links to the Bookings page.
 - The Bookings page has a short form with required fields, as well as the phone number at the top of the page for those who prefer to call.
 - The contact information for phone and email are also provided in the footer on every page.
