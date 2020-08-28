@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <title>Happy Dogs</title>
@@ -39,40 +39,32 @@
       </nav>
 </header>
 
-<section>
+<section id="location-page">
     <div class="container-fluid heading-container">
         <div class="row">
             <h3 class="page-heading">Find Us</h3>
         </div>
     
-    <div class="row">
-    
-        <div class="booking-left col-sm-4">
-          
-            <div class="row page-text">
-                Getting to Happy Dogs is easy. We are served by busses 833, 742 and 184. 
-                There is also parking for both cars and bikes for our customers.
-            </div>
-            <div class="row">
-                <img src="assets/images/dogsniff.jpg" alt="Dog nose">
-            </div>
-           
-        </div>
+        <div class="row">
+            <div id="sidebar" class="col-sm-4">
             
-        <div id="map" class="col-sm-8">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4973.7554788764655!2d-0.31285077244736265!3d51.44203915001791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760c6d9a99efdf%3A0x8fe72a8984e945d5!2s32%20Meadlands%20Dr%2C%20Richmond%20TW10%207EE%2C%20UK!5e0!3m2!1sen!2sse!4v1598430284615!5m2!1sen!2sse" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <div class="row page-text">
+                    Getting to Happy Dogs is easy. We are served by busses 833, 742 and 184. 
+                    There is also parking for both cars and bikes for our customers.
+                </div>
+                <div class="row">
+                    <img src="assets/images/dogsniff.jpg" alt="Dog nose">
+                </div>
+                <hr class="d-sm-none d-block">
+            </div>
+            <div id="main-content" class="col-sm-8">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4973.7554788764655!2d-0.31285077244736265!3d51.44203915001791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760c6d9a99efdf%3A0x8fe72a8984e945d5!2s32%20Meadlands%20Dr%2C%20Richmond%20TW10%207EE%2C%20UK!5e0!3m2!1sen!2sse!4v1598430284615!5m2!1sen!2sse" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
         </div>
     </div>
-    
-    
-    
-    
-    </div>
-    
-    
-
 </section>
 
+<a id="back-to-top"><span class="fas fa-chevron-up"></span><div>Back to Top</div></a>
 
 <footer class="footer">
     <div class="container">
@@ -109,6 +101,26 @@
         </div>
     </div>
  </footer>
+
+ <script type="text/javascript">
+    // Taken from:
+    // https://codepen.io/matthewcain/pen/ZepbeR
+
+    var btn = $('#back-to-top');
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 100) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0}, 300);
+    });
+</script>
 
 </body>
 </html>

@@ -39,62 +39,62 @@
       </nav>
 </header>
 
-<section>
+<section >
     <div class="container-fluid heading-container">
         <div class="row">
             <h3 class="page-heading">Booking Form</h3>
         </div>
     
-        <div  class="row">
+        <div class="row">
         
-            <div class="booking-left col-sm-4">
-            <div class="row page-text">
+            <div id="sidebar" class="col-sm-4">
+                <div class="row page-text">
                     Use our booking form to inform us of your needs and we will get back to you as soon as possible!
-                    <hr> 
+                    <hr>
                     Alternatively, you can give us a call on 0208 758 2110.
                 </div>
                 <div class="row">
                     <img src="assets/images/bookings/dogphonestand.jpg" alt="Dog with phone">
                 </div>
-            
+                <hr class="d-sm-none d-block">
             </div>
                 
-            <div id="booking-form" class="col-sm-8">
+            <div id="main-content" class="col-sm-8">
                 <form>
                     <div class="form-group row">
-                        <label for="inputName" class="col-sm-3 col-form-label">Name</label>
+                        <label for="inputName" class="col-sm-3 col-form-label">Name<span class="req">*</span></label>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control hard-corners" id="inputName" placeholder="Name">
+                            <input type="text" class="form-control hard-corners" id="inputName" placeholder="Name" required>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="inputEmail" class="col-sm-3 col-form-label">Email</label>
+                        <label for="inputEmail" class="col-sm-3 col-form-label">Email<span class="req">*</span></label>
                         <div class="col-sm-6">
-                            <input type="email" class="form-control hard-corners" id="inputEmail" placeholder="Email">
+                            <input type="email" class="form-control hard-corners" id="inputEmail" placeholder="Email" required>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="inputPhone" class="col-sm-3 col-form-label">Phone</label>
+                        <label for="inputPhone" class="col-sm-3 col-form-label">Phone<span class="req">*</span></label>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control hard-corners" id="inputPhone" placeholder="Phone">
+                            <input type="text" class="form-control hard-corners" id="inputPhone" placeholder="Phone" required>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="inputDogname" class="col-sm-3 col-form-label">Dog name</label>
+                        <label for="inputDogname" class="col-sm-3 col-form-label">Dog name<span class="req">*</span></label>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control hard-corners" id="inputDogname" placeholder="Dog name">
+                            <input type="text" class="form-control hard-corners" id="inputDogname" placeholder="Dog name" required>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="inputDogbreed" class="col-sm-3 col-form-label">Dog breed</label>
+                        <label for="inputDogbreed" class="col-sm-3 col-form-label">Dog breed<span class="req">*</span></label>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control hard-corners" id="inputDogbreed" placeholder="Dog breed">
+                            <input type="text" class="form-control hard-corners" id="inputDogbreed" placeholder="Dog breed" required>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="inputService" class="col-sm-3 col-form-label">Service required</label>
+                        <label for="inputService" class="col-sm-3 col-form-label">Service required<span class="req">*</span></label>
                         <div class="col-sm-6">
-                            <select class="form-control hard-corners" id="service" name="service">
+                            <select class="form-control hard-corners" id="service" name="service" required>
                                 <option value="fullgroom">Full Groom</option>
                                 <option value="washandgo">Wash and Go</option>
                                 <option value="handstripping">Hand Stripping</option>
@@ -125,7 +125,7 @@
 
 </section>
 
-<a id="back-to-top"><span class="fas fa-chevron-up"></span></a>
+<a id="back-to-top"><span class="fas fa-chevron-up"></span><div>Back to Top</div></a>
 
 <footer class="footer">
     <div class="container">
@@ -164,19 +164,22 @@
  </footer>
 
 <script type="text/javascript">
-    var backToTop = $('#back-to-top');
+    // Taken from:
+    // https://codepen.io/matthewcain/pen/ZepbeR
 
-    $(window).on("scroll", function(e) {
-        if ($(window).scrollTop() > 200) {
-            backToTop.css({"display": "flex"});
+    var btn = $('#back-to-top');
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 100) {
+            btn.addClass('show');
         } else {
-            backToTop.hide();
+            btn.removeClass('show');
         }
     });
 
-    backToTop.click(function(e) {
+    btn.on('click', function(e) {
         e.preventDefault();
-        $('html').animate({scrollTop:0}, 250);
+        $('html, body').animate({scrollTop:0}, 300);
     });
 </script>
 

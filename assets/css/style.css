@@ -58,7 +58,7 @@ body {
 }
 
 section {
-    margin-top: 4.75em;
+    margin-top: 75px;
 }
 
 .heading-container {
@@ -99,17 +99,28 @@ button.btn:hover {
     border-radius: 1em;
 
     z-index: 1337;
+    color: black;
 }
 
-#back-to-top span {
+#back-to-top .fas {
     color: white;
     font-size: 2.5em;
+}
+
+#back-to-top div {
+    position: absolute;
+    top: -1.7em;
+    opacity: 1;
+    width: 6em;
+    text-align: center;
+    font-size: 14px;
 }
 
 #back-to-top:hover {
     background: #FF6B6B;
     opacity: 1;
     text-decoration: none;
+    color: #FF6B6B;
 }
 
 #back-to-top.show {
@@ -151,7 +162,12 @@ button.btn:hover {
 }
 
 .paw-list {
-    margin-top: 20px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.paw-list:first-child {
+    margin-top: 0;
 }
 
 .paw-list span:first-child {
@@ -180,6 +196,7 @@ button.btn:hover {
 
 .card-style {
     width: 60%;
+    height: 22em;
     margin: auto;
     background: #FFE66D;
     border-radius: 0;
@@ -203,9 +220,19 @@ button.btn:hover {
     font-weight: bold;
 }
 
-.team-name {
+.about-container .heading-row {
+    justify-content: center;
+    padding-bottom: 0;
+}
+
+.green-bold {
     color: #1A535C;
     font-weight: bold;
+}
+
+.team-name {
+    margin: 1em 0;
+    text-align: center;
 }
 
 @media (max-width: 768px) {  
@@ -216,12 +243,25 @@ button.btn:hover {
 
 }
 
-/*    For removing image on non-home pages on mobile */
 
 @media (max-width: 576px) {  
 
-.booking-left div img {
+/* For removing image on non-home pages on mobile */
+#sidebar div img {
     display: none;
+}
+
+/* For resizing carousel on mobile */
+#carousel-row {
+    padding: 0;
+}
+
+#carousel-row .card {
+    width: 100%;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(1);
 }
 
 }
@@ -262,6 +302,10 @@ h5 {
     color: #1A535C;
 }
 
+#services-page #main-content  {
+    padding: 2em;
+}
+
 @media (min-width: 576px) {  
 
 .services-right {
@@ -272,23 +316,34 @@ h5 {
 
 /* ----------- Bookings ----------- */
 
-.booking-left div img {
+#sidebar div img {
     width: 100%;
     padding: 2em;
 }
 
-#booking-form {
-    margin-top: 2em;
-    padding: 0 2em;
+#main-content {
+    padding: 0;
 }
 
-#booking-form .form-group {
+#main-content form {
+    padding: 2em;
+    background: #F2F3F4;
+}
+
+#main-content .form-group {
     justify-content: center;
     margin: 0 0 1em 0;
 }
 
-#booking-form .form-group:last-child {
+#main-content .form-group:last-child {
     text-align: right;
+    margin: 0;
+}
+
+.req {
+    margin: 10px;
+    font-weight: bold;
+    color: #FF6B6B;
 }
 
 .hard-corners {
@@ -300,6 +355,17 @@ h5 {
     resize: none;
 }
 
+/* Remove form padding on mobile */
+
+@media (min-width: 576px) {  
+
+#main-content  {
+    padding: 2em;
+}
+
+}
+
+
 /* ----------- Location ----------- */
 
 .location {
@@ -308,11 +374,11 @@ h5 {
     padding: 0;
 }
 
-#map {
+#location-page #main-content {
     text-align: center;
 }
 
-#map iframe {
+#location-page iframe {
     width: 100%;
     height: 100%;
     padding: 2em;
