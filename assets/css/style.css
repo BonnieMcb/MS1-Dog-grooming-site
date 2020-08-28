@@ -106,6 +106,7 @@ button.btn:hover {
     width: 6em;
     text-align: center;
     font-size: 14px;
+    color: #000;
 }
 
 #back-to-top:hover {
@@ -114,16 +115,20 @@ button.btn:hover {
     text-decoration: none;
 }
 
-#back-to-top div {
-    color: #000;
-}
-
 #back-to-top:hover div {
     color: #FF6B6B;
 }
 
 #back-to-top.show {
     display: flex;
+}
+
+@media (max-width: 576px) {  
+
+#back-to-top div {
+    display: none;
+}
+
 }
 
 /* ----------- Home ----------- */
