@@ -38,7 +38,7 @@ I wanted the style of the website to feel professional without being too fancy, 
 
 For the sub-pages I used the rule of thirds, by giving the main content two-thirds of the page, on the right hand side. The left third is used for a page heading, brief description and an image. 
 
-Colour Palette
+#### Colour Palette
 
 I used [coolors.co](coolors.co) to choose a suite of complementary colours for my website. Initially I had imagined a light turquiose in my mock ups but this looked too medical and I did not want the site to be mistaken for a vet instead of a grooming salon. 
 
@@ -49,15 +49,15 @@ https://coolors.co/1a535c-4ecdc4-f7fff7-ff6b6b-ffe66d
 - ![#FF6B6B](https://placehold.it/15/FF6B6B/000000?text=+) #FF6B6B 'Bittersweet' 
 - ![#FFE66D](https://placehold.it/15/FFE66D/000000?text=+) #FFE66D 'Naples Yellow'
 
-Typography
+#### Typography
 
 I did not want to make any bold statements with the typography. The main aim was to make the website readable and attractive. I chose the Montserrat font throughout the whole website with Sans Serif as the fallback font in case Montserrat does not load correctly.
 
-Imagery
+#### Imagery
 
 I selected royalty-free images, and attempted to match the website's colour scheme.
 
-Wireframes
+#### Wireframes
 
 I did not create the website fully in a design tool only to then create it again in HTML/CSS. Instead I used design tools to mock up rough versions of my site, including design and colour combinations. Since this was a solo project, and my first website created unaided, I was mindful of spending too much time creating perfectly responsive design mockups. As such, I was happy keeping some information in my head rather than drawing out the exact version of the final website. On collabarative projects, however, I would have a more finalised version of the website in a design tool. 
 
@@ -126,7 +126,8 @@ I did not create the website fully in a design tool only to then create it again
 
 
 ## Testing
-    The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there was no invalid HTML or CSS.
+
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there was no invalid HTML or CSS.
 
 -   [W3C Markup Validator](https://validator.w3.org/) Fully passed, no errors or warnings
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) My CSS has no errors or warnings, but Bootstrap CSS intentionally does.
